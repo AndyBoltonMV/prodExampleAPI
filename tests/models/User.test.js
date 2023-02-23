@@ -4,7 +4,7 @@ const { User } = require("../../src/models");
 let mockData;
 
 beforeAll(async () => {
-  mockData = JSON.parse(await readFile("./tests/MOCK_DATA.json"));
+  mockData = JSON.parse(await readFile("./tests/mockData/MOCK_USERS.json"));
 });
 
 beforeEach(async () => {
