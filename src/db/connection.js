@@ -6,6 +6,7 @@ const storage = process.env.STORAGE || join(__dirname, "db.sqlite");
 const db = new Sequelize({
   dialect: "sqlite",
   storage,
+  logging: false,
 });
 
 module.exports = {
