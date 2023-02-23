@@ -1,0 +1,27 @@
+{
+  "name": "prodexample",
+  "version": "1.0.0",
+  "description": "",
+  "main": "server.js",
+  "directories": {
+    "test": "tests"
+  },
+  "scripts": {
+    "test": "jest",
+    "dev": "nodemon server.js",
+    "start": "node server.js"
+  },
+  "keywords": [],
+  "author": "",
+  "license": "ISC",
+  "dependencies": {
+    "express": "^4.18.2",
+    "sequelize": "^6.28.2",
+    "sqlite3": "^5.1.4"
+  },
+  "devDependencies": {
+    "jest": "^29.4.3",
+    "jest-express": "^1.12.0",
+    "nodemon": "^2.0.20"
+  }
+}
