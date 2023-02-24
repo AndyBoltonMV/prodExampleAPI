@@ -1,8 +1,8 @@
-const { User } = require("../models");
+const { validationResult } = require("express-validator");
 
 exports.login = async (req, res) => {
   try {
-    if (!req.user) {
+    if (!validationResult(req).isEmpty()) {
       throw new Error("Not logged in");
     } else {
       res.status(200).send({ user: req.user });
